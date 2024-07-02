@@ -1,8 +1,14 @@
 #main{
     max-width: 900px;
     margin: auto;
+    font-family: helvetica;
 }
 #grid{
     max-width: 900px;
     margin: auto;
+}
+button{
+    margin: auto;
+    margin-bottom: 3%;
+    padding: 1% 2%;
 }

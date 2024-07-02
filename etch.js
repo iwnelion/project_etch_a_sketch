@@ -23,8 +23,13 @@ function createGrid(){
 }
 
 function coloring(event){
+    if(event.target.tagName==='DIV'){
+        const cell=event.target;
+        cell.style.backgroundColor='powderblue';
+        const currentOpacity=parseFloat(cell.style.opacity) || 0;
+        cell.style.opacity=Math.min(currentOpacity+0.1, 1);
+    }
     console.log('coloring');
-    event.target.style.backgroundColor='powderblue';
 }
 
 createGrid();
